@@ -1,0 +1,30 @@
+{
+  "name": "node-producer-consumer-challenge",
+  "description": "A 'producer' to send a series of random arithmetic expressions and a 'consumer' to receive, evaluate, and return the answer of said expressions.",
+  "author": "Nick Schwab",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "private": false,
+  "scripts": {
+    "consumer": "node apps/consumer/server.js",
+    "producer": "node apps/producer/start.js",
+    "test": "mocha tests --recursive"
+  },
+  "dependencies": {
+    "async": "1.5.2",
+    "body-parser": "1.15.0",
+    "connect": "3.4.1",
+    "log4js": "0.6.31",
+    "request": "2.69.0"
+  },
+  "devDependencies": {
+    "mocha": "2.4.5",
+    "sinon-chai": "2.8.0"
+  },
+  "engines": {
+    "node": ">= 4.3.0"
+  }
+}
