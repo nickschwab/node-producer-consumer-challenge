@@ -23,9 +23,10 @@ The Consumer listens for requests containing an `expression` POST parameter, par
 
 ## Starting a Producer
 
-An instance of the Producer will form an expression consisting of 2 random integers and a random mathematical operator (+, -, *, /) at a rate of once per second (unless otherwise specified via an environment variable or by altering the `config.js` file). After constructing each random expression, it will attempt to send it to the Consumer via an HTTP POST request to be evaluated and receive an answer. Each generated expression is logged to the console, as are the answers received from the Consumer.
+An instance of the Producer will form an expression consisting of 2 random integers and a random mathematical operator (+, -, *, /) at a rate of once per second (unless otherwise specified via an environment variable or by altering the `config.js` file). After constructing each random expression, it will attempt to send it to the Consumer via an HTTP POST request to be evaluated and receive an answer. Each generated expression is logged to the console, as are the answers received from the Consumer. You may run multiple instances of the Producer at a time.
 
 1. Run `npm run producer`
+1. Repeat for as many Producer instances you would like to run simultaneously
 
 ## Screenshot
 
