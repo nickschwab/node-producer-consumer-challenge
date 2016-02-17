@@ -49,10 +49,10 @@ An instance of the Producer will form an expression consisting of 2 random integ
 
 ![Screenshot](https://raw.githubusercontent.com/nickschwab/node-producer-consumer-challenge/master/images/screenshot.png)
 
-## Activity Diagram
+## UML Activity Diagram
 
 ![Activity Diagram](https://raw.githubusercontent.com/nickschwab/node-producer-consumer-challenge/master/images/activity-diagram.png)
 
-## Sequence Diagram
+## UML Sequence Diagram
 
 ![Sequence Diagram](https://raw.githubusercontent.com/nickschwab/node-producer-consumer-challenge/master/images/sequence-diagram.png)
