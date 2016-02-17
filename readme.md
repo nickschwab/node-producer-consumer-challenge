@@ -4,11 +4,11 @@ Node.js Producer-Consumer Challenge
 
 The assignment is to build a simple Producer/Consumer system. In this system the Generator (Producer) will send a series of random arithmetic expressions, while the Evaluator (Consumer) will accept these expressions, compute the result and then report the solution to the Generator (Producer).
 
-## Built upon (not tested with other configurations)
+## Requirements
 
 ### Engines
-- Node.js 4.3.0
-- NPM 2.14.12
+- Node.js >= 0.10.42
+- NPM >= 1.4.29
 
 ### Dependencies
 - Async 1.5.2
