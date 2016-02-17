@@ -35,6 +35,7 @@ exports.randomExpression = function(){
   * 
   * INPUT:
   *     expression  (string)    e.g. "1+2="
+  *     callback    (function)  
   *
   * CALLBACK(error, answer):
   *     successful answer will be a numeric value
@@ -50,7 +51,7 @@ exports.sendExpression = function(expression, callback){
         if(err){
             logger.debug("Unable to communicate with Consumer. Make sure the Consumer is running.");
         }else{
-            logger.debug("Consumer responded with answer to '" + expression + "': " + body);
+            logger.debug("Consumer responded to '" + expression + "' with: " + body);
         }
         if(typeof callback == 'function'){
             callback(err, body);

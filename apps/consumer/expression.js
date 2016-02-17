@@ -1,7 +1,14 @@
 'use strict';
 
-var regex = /^([\-]{0,1}\d*)([\+\-\*\/])([\-]{0,1}\d*)\=$/;
 var async = require('async');
+
+/*
+  * METHOD: .regex()
+  * DESCRIPTION: Returns a regex pattern of allowed expressions
+*/
+exports.regex = function(){
+    return /^([\-]{0,1}\d*)([\+\-\*\/])([\-]{0,1}\d*)\=$/;
+};
 
 /*
   * METHOD: .parse()
@@ -21,7 +28,7 @@ var async = require('async');
   *     otherwise error will contain a string describing the failure
 */
 exports.parse = function(expression, callback){
-    var parsedExpression = regex.exec(expression);
+    var parsedExpression = exports.regex().exec(expression);
     if(!parsedExpression || parsedExpression.length !== 4){
         callback("Invalid expression '" + expression + "'");
     }else{
