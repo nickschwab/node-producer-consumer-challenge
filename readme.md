@@ -4,24 +4,6 @@ Node.js Producer-Consumer Challenge
 
 The assignment is to build a simple Producer/Consumer system. In this system the Generator (Producer) will send a series of random arithmetic expressions, while the Evaluator (Consumer) will accept these expressions, compute the result and then report the solution to the Generator (Producer).
 
-## Requirements
-
-### Engines
-- Node.js >= 0.10.42
-- NPM >= 1.4.29
-
-### Dependencies
-- Async 1.5.2
-- body-parser 1.15.0
-- connect 3.4.1
-- log4js 0.6.31
-- request 2.69.0
-
-### Dev Dependencies
-- Mocha 2.4.5
-- Sinon-Chai 2.8.0
-
-
 ## Setup & Configuration
 
 1. Run `npm install`
@@ -56,3 +38,20 @@ An instance of the Producer will form an expression consisting of 2 random integ
 ## UML Sequence Diagram
 
 ![Sequence Diagram](https://raw.githubusercontent.com/nickschwab/node-producer-consumer-challenge/master/images/sequence-diagram.png)
+
+## Requirements
+
+### Engines
+- Node.js >= 0.10.42
+- NPM >= 1.4.29
+
+### Dependencies
+- Async 1.5.2
+- body-parser 1.15.0
+- connect 3.4.1
+- log4js 0.6.31
+- request 2.69.0
+
+### Dev Dependencies
+- Mocha 2.4.5
+- Sinon-Chai 2.8.0
